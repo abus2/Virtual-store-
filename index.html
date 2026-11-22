@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Virtual Store · 3D Shopping Concept</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="brand">NIKE<small>VIRTUAL STORE</small></div>
+<div id="cart">Cart · <span id="cn">0</span></div>
+<input id="q" list="names" placeholder="Search products…" enterkeyhint="search" autocomplete="off" aria-label="Search"><datalist id="names"></datalist><div id="toast"></div><div id="mod"></div>
+<div id="hero"><div><small>NEW SEASON · 2026</small><h1>Move to the<br>next level.</h1><p>Walk through our 3D flagship store. Try colours, save favourites, earn points and check out in seconds.</p><div class="hb"><button id="enter">Enter the store</button><button id="browse" class="ghost">Browse all products</button></div><div class="cats"><button data-k="clothing">Clothing</button><button data-k="shoes">Shoes</button><button data-k="bags">Bags</button><button data-k="caps">Caps</button></div><div class="tick">FREE SHIPPING OVER $100 · CODE NIKE10 FOR 10% OFF · POINTS ON EVERY ORDER</div></div></div>
+<div id="grid"><h2>Shop all</h2><div class="gh"><span id="gf"><button data-c="All" class="on">All</button><button data-c="Clothing">Clothing</button><button data-c="Shoes">Shoes</button><button data-c="Bags">Bags</button><button data-c="Caps">Caps</button></span><select id="gsel" aria-label="Sort"><option value="">Sort: Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="az">Name A–Z</option></select><button id="gx">× Close</button></div><div id="gl"></div><div id="nl">Join and get 10% off <input id="nle" placeholder="Your email"><button id="nlb">Subscribe</button></div></div><div id="tools"><button id="gb" class="tb">▦ Shop</button><button id="lm" class="tb">☀ Mood</button><button id="sn" class="tb">📷 Photo</button><button id="cm" class="tb">🎨 Colour</button><button id="tour" class="tb">▶ Tour</button><button id="th" class="tb" aria-label="Day / night">◐</button><button id="mu" class="tb" aria-label="Sound">🔊</button><label id="fl">Max price <input id="mx" type="range" min="25" max="200" step="5" value="200"><b id="mv">$200</b><label><input id="so" type="checkbox"> Sale</label></label></div><div id="drawer"></div>
+<div id="arrows"><button id="prev" aria-label="Previous">‹</button><button id="next" aria-label="Next">›</button></div>
+<div id="label"></div>
+<div id="hint">Drag to look · click an item · C cart · T tour · M mute · D theme</div>
+<div id="panel"><button id="close" aria-label="Close">×</button><div id="ph"></div><div class="cat" id="pc"></div><h2 id="pn"></h2><div class="price" id="pp"></div><div class="sub" id="po" style="color:#2f9e44;margin:2px 0 0"></div><div class="sub" id="ps"></div><div class="sub" id="pd"></div><div class="cat">Colour</div><div id="sw"></div><div class="cat">Select size</div><div id="sizes"></div><button id="sgb" class="lnk">Size guide</button><div id="sg" class="sub" style="display:none"></div><div class="sub"><input id="ht" type="number" inputmode="numeric" placeholder="Height (cm) → find my size" style="width:100%;padding:7px;border-radius:8px;border:1px solid var(--line);background:none;color:inherit"><span id="hr"></span></div><button id="add">Add to Cart</button><button id="wish">♡ Save</button><button id="cmpb" class="lnk" style="margin:8px 0 0">+ Compare</button><button id="shr" class="lnk" style="margin:8px 0 0 12px">⧉ Share link</button><div id="cl" class="sub"></div><div id="pnv"><button id="pv">‹ Prev</button><button id="nx">Next ›</button></div></div>
+<nav id="nav"></nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>window.THREE||document.write('<script src="three.min.js"><\/script>')</script>
+<script>window.THREE||document.body.insertAdjacentHTML('beforeend','<p style="position:fixed;inset:40% 20px auto;text-align:center;font-family:sans-serif">Could not load Three.js. Check your internet connection, or download three.min.js (r128) into this folder, then reload.</p>')</script>
+<script src="script.js"></script>
+</body>
+</html>
